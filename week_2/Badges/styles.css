@@ -1,0 +1,96 @@
+@import url(../../styles.css);
+
+body {
+  justify-content: space-between;
+}
+
+.container {
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.button__badge {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 2rem;
+  border: none;
+  outline: none;
+  color: white;
+  border-radius: 5px;
+  background-color: var(--azraq-blue);
+}
+
+.buttontoggle__badge {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 2rem;
+  border: 1px solid black;
+  outline: none;
+  color: black;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.left__badge {
+  background-color: var(--tomato-red);
+  position: absolute;
+  top: -20%;
+  left: -10%;
+  color: white;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+.badge {
+  background-color: var(--tomato-red);
+  position: absolute;
+  top: -20%;
+  right: -10%;
+  color: white;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+.icon {
+  margin-top: 20px;
+  position: relative;
+  height: 50px;
+  width: 40px;
+  font-size: 2rem;
+}
+
+.icon__badge {
+  background-color: var(--tomato-red);
+  position: absolute;
+  top: -20%;
+  right: -10%;
+  color: white;
+  border-radius: 50%;
+  padding: 2px;
+  font-size: 20px;
+}
+
+.text {
+  position: relative;
+  width: fit-content;
+}
+
+.text__badge {
+  background-color: var(--tomato-red);
+  position: absolute;
+  top: -60%;
+  right: -20%;
+  color: white;
+  border-radius: 50%;
+  padding: 2px;
+  font-size: 25px;
+}
