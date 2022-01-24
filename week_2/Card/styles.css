@@ -1,0 +1,96 @@
+@import url(../../styles.css);
+
+body {
+  flex-direction: row;
+  padding: 2px;
+  box-sizing: border-box;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 20rem;
+  box-sizing: border-box;
+}
+
+.basic__card {
+  box-shadow: var(--background-color) 5px 2px 20px;
+  height: fit-content;
+  position: relative;
+}
+
+.basiccard__heading {
+  padding: 12px;
+}
+
+.card__image {
+  width: 100%;
+}
+
+.card__body {
+  padding: 12px;
+}
+
+.button__style {
+  border: none;
+  outline: none;
+  background-color: white;
+  padding: 5px;
+  padding-left: 0;
+  color: var(--azraq-blue);
+  font-size: 20px;
+}
+
+.bottom__section {
+  width: 100%;
+  display: flex;
+}
+
+.icon__collection {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-left: auto;
+}
+
+.icon__style {
+  color: var(--azraq-blue);
+  font-size: 20px;
+}
+
+/*Second card*/
+
+.image__heading {
+  position: relative;
+}
+
+.basiccard__heading--overlay {
+  position: absolute;
+  bottom: 5%;
+  color: white;
+  padding: 12px;
+}
+
+/*Third card*/
+.image__heading--top {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+/*horizontal card*/
+
+.horizontal__card {
+}
+
+.horizontal__imageheading {
+  display: flex;
+  flex-direction: row;
+}
+
+.horizontal__heading {
+  width: fit-content;
+  padding: 12px;
+}

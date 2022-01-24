@@ -1,62 +1,69 @@
 @import url(../../styles.css);
-
 body {
   width: 100vw;
   height: 100vh;
-  margin-left: 2rem;
-  overflow: hidden;
 }
 
-.snackbar__inputchips {
-  width: 95%;
-  box-sizing: border-box;
-}
-
-.inputchips__container {
-  display: flex;
-  flex-wrap: wrap;
-  border: 2px solid var(--jalapeno-red);
-  padding: 5px;
-  margin-top: 2px;
-  max-height: 10rem;
-  overflow-y: auto;
-  border-radius: 5px;
-  width: 100%;
-}
-
-#snackbar__input {
-  border: none;
-  outline: none;
-  padding: 5px;
-}
-
-.chips__container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
-}
-
-.snackbar__item {
-  background-color: var(--jalapeno-red);
-  display: flex;
-  align-items: center;
+.snackbar {
+  background-color: var(--background-color);
   color: white;
-  padding: 2px 10px;
-  border-radius: 20px;
-  justify-content: space-between;
+  width: 30rem;
+  padding: 10px;
+  border-radius: 5px;
 }
 
-.snackbar__basic {
-  width: 95%;
-  box-sizing: border-box;
+.snackbar__baseline {
   display: flex;
-  gap: 5px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.snackbar__button {
+  background-color: transparent;
+  border-radius: 20px;
+  color: var(--jalapeno-red);
+  outline: none;
+  border: none;
+  margin-left: auto;
+  font-size: 1.3rem;
+}
+
+.icon {
+  margin-left: 10px;
+}
+
+.snackbar__leading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 100px;
+  left: 10px;
+  right: 0;
+  margin-right: auto;
 }
 
 .snackbar__stacked {
-  width: 95%;
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  align-items: start;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 200px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button__container {
+  align-self: end;
 }
