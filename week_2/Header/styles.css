@@ -1,0 +1,26 @@
+@import url(../../styles.css);
+
+.header {
+  color: white;
+  background-color: var(--background-color);
+  display: flex;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.help__icons{
+    margin-left: auto;
+    display: flex;
+    column-gap: 20px;
+}
+
+.prominent__header{
+    margin-top: 20px;
+    height: 5rem;
+}
+
+.collapsed__header{
+    margin-top: 20px;
+    width: 5rem;
+    border-bottom-right-radius: 10px;
+}
