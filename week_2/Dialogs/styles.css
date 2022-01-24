@@ -1,0 +1,87 @@
+@import url(../../styles.css);
+
+body {
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.button__style {
+  border: solid 1px black;
+  outline: 0;
+  width: 10rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: rgb(128, 128, 128, 50%);
+}
+
+.alert {
+  width: 20rem;
+  background-color: white;
+  z-index: 2;
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 10px;
+  box-shadow: black 2px 6px 10px;
+}
+
+.button__container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button__alert__style {
+  border: none;
+  outline: none;
+  width: fit-content;
+  margin: 0 5px;
+  padding: 5px;
+  background-color: white;
+  color: var(--azraq-blue);
+  font-size: 15px;
+}
+
+.alert__sidebyside {
+}
+
+.alert__stacked {
+}
+
+.button__container--stacked {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.items__container {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  height: 5rem;
+  overflow-y: auto;
+}
+
+.item__style {
+  background-color: var(--hint-of-elusive-blue);
+  height: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.form__list {
+  height: 5rem;
+  overflow-y: auto;
+}

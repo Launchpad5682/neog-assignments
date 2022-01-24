@@ -6,9 +6,75 @@
     <title></title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
-    <script src="" async defer></script>
+    <button class="button__style">Alert Side by Side</button>
+    <button class="button__style">Alert Stacked</button>
+    <button class="button__style">Simple</button>
+    <button class="button__style">Confirmation</button>
+    <button class="button__style">Confirmation Stacked</button>
+    <div id="modal"></div>
+    <!-- <div class="hidden alert alert__sidebyside"></div> -->
+    <div class="hidden" id="alertsidebyside">
+      <h3>Dialog Header</h3>
+      <p>Dialog Body text</p>
+      <div class="button__container">
+        <button class="button__alert__style">ACTION 1</button>
+        <button class="button__alert__style">ACTION 2</button>
+      </div>
+    </div>
+    <div class="hidden" id="alertstacked">
+      <h3>Dialog Header</h3>
+      <p>Dialog Body text</p>
+      <div class="button__container--stacked">
+        <button class="button__alert__style">ACTION 1</button>
+        <button class="button__alert__style">ACTION 2</button>
+      </div>
+    </div>
+    <div class="hidden" id="simplealert">
+      <h3>Dialog Header</h3>
+      <div class="items__container">
+        <span class="item__style"><i class="fa fa-home"></i> Item 1</span>
+        <span class="item__style"><i class="fa fa-home"></i> Item 2</span>
+        <span class="item__style"><i class="fa fa-home"></i> Item 3</span>
+        <span class="item__style"><i class="fa fa-home"></i> Item 4</span>
+        <span class="item__style"><i class="fa fa-home"></i> Item 5</span>
+        <span class="item__style"><i class="fa fa-home"></i> Item 6</span>
+      </div>
+    </div>
+    <div class="hidden" id="confirmation">
+      <h3>Dialog Header</h3>
+      <form class="form__list">
+        <div><input type="radio" name="" id="" /> <label>Item 1</label></div>
+        <div><input type="radio" name="" id="" /> <label>Item 2</label></div>
+        <div><input type="radio" name="" id="" /> <label>Item 3</label></div>
+        <div><input type="radio" name="" id="" /> <label>Item 4</label></div>
+        <div><input type="radio" name="" id="" /> <label>Item 5</label></div>
+      </form>
+      <div class="button__container">
+        <button class="button__alert__style">ACTION 1</button>
+        <button class="button__alert__style">ACTION 2</button>
+      </div>
+    </div>
+    <div class="hidden" id="confirmation-stacked">
+      <h3>Dialog Header</h3>
+      <form class="form__list">
+        <div><input type="radio" name="" id="" /> <label>Item 1</label></div>
+        <div><input type="radio" name="" id="" /> <label>Item 2</label></div>
+        <div><input type="radio" name="" id="" /> <label>Item 3</label></div>
+        <div><input type="radio" name="" id="" /> <label>Item 4</label></div>
+        <div><input type="radio" name="" id="" /> <label>Item 5</label></div>
+      </form>
+      <div class="button__container--stacked">
+        <button class="button__alert__style">ACTION 1</button>
+        <button class="button__alert__style">ACTION 2</button>
+      </div>
+    </div>
+    <script src="script.js" async defer></script>
   </body>
 </html>
